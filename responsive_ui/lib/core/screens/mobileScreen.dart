@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:responsive_ui/core/constant/paths.dart';
 import 'package:responsive_ui/core/themes/appColors.dart';
 import 'package:responsive_ui/core/widgets/customMobileContainer.dart';
-
 import '../widgets/customCard.dart';
 import '../widgets/customHeadLineRow.dart';
 
@@ -27,12 +26,15 @@ class MobileScreen extends StatelessWidget {
                   hint: Text("Search destinations,cities,experiences... "),
                   hintStyle: TextStyle(color: Colors.white),
                   fillColor: Color(0xff23231f),
-                  prefixIcon: Icon(Icons.search_sharp, color: Color(0xff80817b)),
+                  prefixIcon: Icon(
+                    Icons.search_sharp,
+                    color: Color(0xff80817b),
+                  ),
                   border: OutlineInputBorder(borderRadius: .circular(30)),
                   suffixIcon: Icon(Icons.sort, color: Color(0xff80817b)),
                 ),
               ),
-          
+
               SizedBox(height: 15),
               Container(
                 height: 200,
@@ -60,14 +62,17 @@ class MobileScreen extends StatelessWidget {
                             elevation: 3,
                             color: Color(0xff98dcc9),
                             child: Padding(
-                              padding: const EdgeInsets.only(left: 8.0, right: 8),
+                              padding: const EdgeInsets.only(
+                                left: 8.0,
+                                right: 8,
+                              ),
                               child: Text("* Features"),
                             ),
                           ),
                         ],
                       ),
                     ),
-          
+
                     //الجزء السفلي
                     Container(
                       padding: .only(left: 15),
@@ -92,7 +97,7 @@ class MobileScreen extends StatelessWidget {
               SizedBox(height: 20),
               CustomHeadLineRow(headLine1: "Categories", headLine2: "See all"),
               SizedBox(height: 12),
-          
+
               SingleChildScrollView(
                 scrollDirection: .horizontal,
                 child: Row(
@@ -106,10 +111,10 @@ class MobileScreen extends StatelessWidget {
                   ],
                 ),
               ),
-          
+
               CustomHeadLineRow(headLine1: "Popular", headLine2: "See all"),
               SizedBox(height: 12),
-          
+
               Column(
                 children: [
                   CustomMobileContainer(
@@ -119,7 +124,7 @@ class MobileScreen extends StatelessWidget {
                     rate: "4.9",
                     price: "920",
                   ),
-                  SizedBox(height: 12,),
+                  SizedBox(height: 12),
                   CustomMobileContainer(
                     imagePath: ImagePath.baliPath,
                     cityTitle: "Bali",
@@ -127,7 +132,7 @@ class MobileScreen extends StatelessWidget {
                     rate: "4.8",
                     price: "640",
                   ),
-                  SizedBox(height: 12,),
+                  SizedBox(height: 12),
                   CustomMobileContainer(
                     imagePath: ImagePath.parisPath,
                     cityTitle: "Paris",
@@ -135,7 +140,7 @@ class MobileScreen extends StatelessWidget {
                     rate: "4.9",
                     price: "860",
                   ),
-                  SizedBox(height: 12,),
+                  SizedBox(height: 12),
 
                   CustomMobileContainer(
                     imagePath: ImagePath.dahabPath,
@@ -144,8 +149,7 @@ class MobileScreen extends StatelessWidget {
                     rate: "5",
                     price: "1000",
                   ),
-                  SizedBox(height: 12,),
-
+                  SizedBox(height: 12),
                 ],
               ),
               //Main Column
