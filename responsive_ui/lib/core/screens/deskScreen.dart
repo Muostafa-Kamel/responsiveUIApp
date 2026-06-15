@@ -9,7 +9,7 @@ class DeskScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text("D E S K")),
+          title: Text("D E S K 🖥️ ")),
       backgroundColor: Appcolors.appBGColor,
       body: Padding(
         padding: .all(15),

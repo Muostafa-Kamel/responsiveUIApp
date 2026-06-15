@@ -21,7 +21,7 @@ class Homescreen extends StatelessWidget {
       builder: (BuildContext context, BoxConstraints constraints) {
         if (constraints.maxWidth < 600) {
           return MobileScreen();
-        } else if (constraints.maxWidth > 600 && constraints.maxWidth < 800) {
+        } else if (constraints.maxWidth > 600 && constraints.maxWidth < 1000) {
           return TabletScreen();
         } else {
           return DeskScreen();
