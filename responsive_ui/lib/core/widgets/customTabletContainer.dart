@@ -67,12 +67,15 @@ class CustomTabletContainer extends StatelessWidget {
                   ],
                 ),
                 Text(countryTitle),
-                Row(
-                  mainAxisAlignment: .spaceBetween,
-                  children: [
-                    Text("* $rate "),
-                    Text("From: \$ $price "),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: .spaceBetween,
+                    children: [
+                      Text("* $rate "),
+                      Text("From: \$ $price "),
+                    ],
+                  ),
                 ),
               ],
             ),

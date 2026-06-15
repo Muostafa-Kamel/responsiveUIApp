@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_ui/core/themes/appColors.dart';
-
 import '../constant/paths.dart';
 import '../widgets/customCard.dart';
-import '../widgets/customMobileContainer.dart';
 import '../widgets/customHeadLineRow.dart';
 import '../widgets/customTabletContainer.dart';
 
@@ -203,22 +201,22 @@ class TabletScreen extends StatelessWidget {
                     children: [
                       Expanded(
                         child: CustomTabletContainer(
-                          imagePath: ImagePath.baliPath,
-                          cityTitle: "Bali",
-                          countryTitle: "Indonesia",
+                          imagePath: ImagePath.icelandPath,
+                          cityTitle: "Iceland",
+                          countryTitle: "Europe",
                           rate: "4.8",
-                          price: "640",
-                          shortInfo: "City",
+                          price: "1100",
+                          shortInfo: "Ice Mountain",
                         ),
                       ),
                       SizedBox(width: 12,),
                       Expanded(
                         child: CustomTabletContainer(
-                          imagePath: ImagePath.parisPath,
-                          cityTitle: "Paris",
-                          countryTitle: "France",
-                          rate: "4.9",
-                          price: "860",
+                          imagePath: ImagePath.maldivesPath,
+                          cityTitle: "Maldives",
+                          countryTitle: "Indian Ocean",
+                          rate: "5",
+                          price: "2400",
                           shortInfo: "Beach",
                         ),
                       ),
