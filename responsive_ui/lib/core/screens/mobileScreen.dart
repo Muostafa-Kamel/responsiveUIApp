@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_ui/core/constant/paths.dart';
 import 'package:responsive_ui/core/themes/appColors.dart';
@@ -12,30 +11,32 @@ class MobileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("M O B I L E 📱")),
+      appBar: AppBar(title: const Text("M O B I L E 📱")),
       backgroundColor: Appcolors.appBGColor,
       body: Padding(
-        padding: .all(15),
+        padding: const .all(15),
         //Main Column
         child: SingleChildScrollView(
           child: Column(
             children: [
               TextFormField(
-                style: TextStyle(color: Colors.white, fontSize: 14),
+                style: const TextStyle(color: Colors.white, fontSize: 14),
                 decoration: InputDecoration(
-                  hint: Text("Search destinations,cities,experiences... "),
+                  hint: const Text(
+                    "Search destinations,cities,experiences... ",
+                  ),
                   hintStyle: TextStyle(color: Colors.white),
-                  fillColor: Color(0xff23231f),
-                  prefixIcon: Icon(
+                  fillColor: const Color(0xff23231f),
+                  prefixIcon: const Icon(
                     Icons.search_sharp,
                     color: Color(0xff80817b),
                   ),
                   border: OutlineInputBorder(borderRadius: .circular(30)),
-                  suffixIcon: Icon(Icons.sort, color: Color(0xff80817b)),
+                  suffixIcon: const Icon(Icons.sort, color: Color(0xff80817b)),
                 ),
               ),
 
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               Container(
                 height: 200,
                 width: double.infinity,
@@ -50,7 +51,7 @@ class MobileScreen extends StatelessWidget {
                       height: 99,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Color(0xff5dc9a5),
+                        color: const Color(0xff5dc9a5),
                         borderRadius: .vertical(top: Radius.circular(13)),
                       ),
                       child: Column(
@@ -60,13 +61,13 @@ class MobileScreen extends StatelessWidget {
                           SizedBox(height: 50),
                           Card(
                             elevation: 3,
-                            color: Color(0xff98dcc9),
+                            color: const Color(0xff98dcc9),
                             child: Padding(
                               padding: const EdgeInsets.only(
                                 left: 8.0,
                                 right: 8,
                               ),
-                              child: Text("* Features"),
+                              child: const Text("* Features"),
                             ),
                           ),
                         ],
@@ -75,14 +76,14 @@ class MobileScreen extends StatelessWidget {
 
                     //الجزء السفلي
                     Container(
-                      padding: .only(left: 15),
+                      padding: const .only(left: 15),
                       height: 99,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Color(0xff085042),
+                        color: const Color(0xff085042),
                         borderRadius: .vertical(bottom: Radius.circular(13)),
                       ),
-                      child: Column(
+                      child: const Column(
                         crossAxisAlignment: .start,
                         children: [
                           Text("Top Destination"),
@@ -94,13 +95,13 @@ class MobileScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 20),
-              CustomHeadLineRow(headLine1: "Categories", headLine2: "See all"),
-              SizedBox(height: 12),
+              const SizedBox(height: 20),
+              const CustomHeadLineRow(headLine1: "Categories", headLine2: "See all"),
+              const SizedBox(height: 12),
 
               SingleChildScrollView(
                 scrollDirection: .horizontal,
-                child: Row(
+                child:const  Row(
                   children: [
                     CustomCard(title: "All"),
                     CustomCard(title: "Beach"),
@@ -112,8 +113,8 @@ class MobileScreen extends StatelessWidget {
                 ),
               ),
 
-              CustomHeadLineRow(headLine1: "Popular", headLine2: "See all"),
-              SizedBox(height: 12),
+              const CustomHeadLineRow(headLine1: "Popular", headLine2: "See all"),
+              const SizedBox(height: 12),
 
               Column(
                 children: [
@@ -124,7 +125,7 @@ class MobileScreen extends StatelessWidget {
                     rate: "4.9",
                     price: "920",
                   ),
-                  SizedBox(height: 12),
+                  const SizedBox(height: 12),
                   CustomMobileContainer(
                     imagePath: ImagePath.baliPath,
                     cityTitle: "Bali",
@@ -132,7 +133,7 @@ class MobileScreen extends StatelessWidget {
                     rate: "4.8",
                     price: "640",
                   ),
-                  SizedBox(height: 12),
+                  const SizedBox(height: 12),
                   CustomMobileContainer(
                     imagePath: ImagePath.parisPath,
                     cityTitle: "Paris",
@@ -140,7 +141,7 @@ class MobileScreen extends StatelessWidget {
                     rate: "4.9",
                     price: "860",
                   ),
-                  SizedBox(height: 12),
+                  const SizedBox(height: 12),
 
                   CustomMobileContainer(
                     imagePath: ImagePath.dahabPath,
@@ -149,7 +150,7 @@ class MobileScreen extends StatelessWidget {
                     rate: "5",
                     price: "1000",
                   ),
-                  SizedBox(height: 12),
+                  const SizedBox(height: 12),
                 ],
               ),
               //Main Column

@@ -6,6 +6,7 @@ class ImagePath{
   static String icelandPath = "assets/images/iceland.jpg";
   static String italyPath = "assets/images/italy.jpg";
   static String maldivesPath = "assets/images/maldives.jpg";
+  static String greecePath = "assets/images/greece.jpg";
 
 
 }

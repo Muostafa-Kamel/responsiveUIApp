@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_ui/core/themes/appColors.dart';
 import '../constant/paths.dart';
@@ -198,9 +197,9 @@ class DeskScreen extends StatelessWidget {
               //   ),
               // ),
 
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               CustomHeadLineRow(headLine1: "Categories", headLine2: "See all"),
-              SizedBox(height: 12),
+              const SizedBox(height: 12),
 
               SingleChildScrollView(
                 scrollDirection: .horizontal,
@@ -220,7 +219,7 @@ class DeskScreen extends StatelessWidget {
                 headLine1: "Popular Destination",
                 headLine2: "See all",
               ),
-              SizedBox(height: 12),
+              const SizedBox(height: 12),
 
               Column(
                 children: [

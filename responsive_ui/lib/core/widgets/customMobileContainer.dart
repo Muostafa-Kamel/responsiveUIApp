@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CustomMobileContainer extends StatelessWidget {
@@ -25,7 +24,7 @@ class CustomMobileContainer extends StatelessWidget {
       decoration: BoxDecoration(
         border: Border.all(color: Colors.white38),
         borderRadius: .circular(13),
-        gradient: LinearGradient(
+        gradient:const  LinearGradient(
           colors: [Color(0xff1d9e75), Color(0xff262624)],
         ),
       ),

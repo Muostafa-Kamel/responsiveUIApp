@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_ui/core/themes/appColors.dart';
 import '../constant/paths.dart';
@@ -13,7 +12,7 @@ class TabletScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title:const  Text(
           "T A B L E T ⬛",
           style: TextStyle(
             fontSize: 24,
@@ -31,26 +30,26 @@ class TabletScreen extends StatelessWidget {
           child: Column(
             children: [
               TextFormField(
-                style: TextStyle(color: Colors.white, fontSize: 14),
+                style: const TextStyle(color: Colors.white, fontSize: 14),
                 decoration: InputDecoration(
-                  hint: Text("Search destinations,cities,experiences... "),
-                  hintStyle: TextStyle(color: Colors.white),
-                  fillColor: Color(0xff23231f),
-                  prefixIcon: Icon(
+                  hint: const Text("Search destinations,cities,experiences... "),
+                  hintStyle:const  TextStyle(color: Colors.white),
+                  fillColor:const  Color(0xff23231f),
+                  prefixIcon:const  Icon(
                     Icons.search_sharp,
                     color: Color(0xff80817b),
                   ),
                   border: OutlineInputBorder(borderRadius: .circular(30)),
-                  suffixIcon: Icon(Icons.sort, color: Color(0xff80817b)),
+                  suffixIcon: const Icon(Icons.sort, color: Color(0xff80817b)),
                 ),
               ),
 
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               Container(
                 height: 150,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: [
+                  gradient:const  LinearGradient(colors: [
                     Color(0xff5dc9a5),
                     Color(0xff085042),
                   ]),
@@ -70,26 +69,26 @@ class TabletScreen extends StatelessWidget {
                               bottomLeft: Radius.circular(13),
                             ),
                             image: DecorationImage(
-                              image: AssetImage("assets/images/greece.jpg"),
+                              image: AssetImage(ImagePath.greecePath),
                               fit: .cover,
                             ),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           bottom: 10,
                           left: 10,
                           child: Card(
                             elevation: 3,
                             color: Color(0xff98dcc9),
                             child: Padding(
-                              padding: const EdgeInsets.only(left: 8.0, right: 8),
+                              padding: EdgeInsets.only(left: 8.0, right: 8),
                               child: Text("* Features"),
                             ),
                           ),
                         ),
                       ],
                     ),
-                    Column(
+                    const Column(
                       children: [
                         Text("Top Destination"),
                         Text("Santorini, \nGreece"),
@@ -99,7 +98,7 @@ class TabletScreen extends StatelessWidget {
                           elevation: 3,
                           color: Color(0xff98dcc9),
                           child: Padding(
-                            padding: const EdgeInsets.only(left: 8.0, right: 8),
+                            padding: EdgeInsets.only(left: 8.0, right: 8),
                             child: Text("Explore"),
                           ),
                         ),
@@ -119,11 +118,11 @@ class TabletScreen extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(height: 20),
-              CustomHeadLineRow(headLine1: "Categories", headLine2: "See all"),
-              SizedBox(height: 12),
+              const SizedBox(height: 20),
+              const CustomHeadLineRow(headLine1: "Categories", headLine2: "See all"),
+              const SizedBox(height: 12),
 
-              SingleChildScrollView(
+              const SingleChildScrollView(
                 scrollDirection: .horizontal,
                 child: Row(
                   children: [
@@ -137,8 +136,8 @@ class TabletScreen extends StatelessWidget {
                 ),
               ),
 
-              CustomHeadLineRow(headLine1: "Popular Destination", headLine2: "See all"),
-              SizedBox(height: 12),
+              const CustomHeadLineRow(headLine1: "Popular Destination", headLine2: "See all"),
+              const SizedBox(height: 12),
 
               Column(
                 children: [
@@ -155,7 +154,7 @@ class TabletScreen extends StatelessWidget {
                           shortInfo: "Culture",
                         ),
                       ),
-                      SizedBox(width: 12,),
+                      const SizedBox(width: 12,),
                       Expanded(
                         child: CustomTabletContainer(
                           imagePath: ImagePath.dahabPath,
@@ -168,7 +167,7 @@ class TabletScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 12),
+                  const SizedBox(height: 12),
                   Row(
                     mainAxisAlignment: .spaceBetween,
                     children: [
@@ -182,7 +181,7 @@ class TabletScreen extends StatelessWidget {
                           shortInfo: "City",
                         ),
                       ),
-                      SizedBox(width: 12,),
+                      const SizedBox(width: 12,),
                       Expanded(
                         child: CustomTabletContainer(
                           imagePath: ImagePath.parisPath,
@@ -195,7 +194,7 @@ class TabletScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 12),
+                  const SizedBox(height: 12),
                   Row(
                     mainAxisAlignment: .spaceBetween,
                     children: [
@@ -209,7 +208,7 @@ class TabletScreen extends StatelessWidget {
                           shortInfo: "Ice Mountain",
                         ),
                       ),
-                      SizedBox(width: 12,),
+                      const SizedBox(width: 12,),
                       Expanded(
                         child: CustomTabletContainer(
                           imagePath: ImagePath.maldivesPath,
@@ -222,8 +221,6 @@ class TabletScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-
-
                 ],
               ),
               //Main Column
