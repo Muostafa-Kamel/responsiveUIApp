@@ -1,6 +1,9 @@
 # responsive_ui
 
 A new Flutter project.
+## App Preview
+
+![App Demo](assets/responsive_app_demo.gif)
 
 ## Getting Started
 
