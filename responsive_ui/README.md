@@ -1,6 +1,9 @@
 # responsive_ui
 
 A new Flutter project.
+
+an app which is responsive with mobile, tablet and deskTop screen.
+
 ## App Preview
 
 ![App Demo](assets/responsive_app_demo.gif)
